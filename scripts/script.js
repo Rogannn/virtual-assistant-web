@@ -1,11 +1,10 @@
 // UI comp
 var startBtn = document.getElementById("startBtn");
 var micIcon = document.getElementById("micIcon");
+var headLabel = document.getElementById("msg-header-label");
 // startBtn.innerHTML = "Start listening";
-const result = document.createElement("div");
 const msgerChat = document.querySelector(".msgerChat");
 const msgerContainer = document.querySelector(".msgerContainer");
-document.body.append(result);
 
 var botStateImage = document.getElementById("bot-state-image");
 var userStateImage = document.getElementById("user-state-image");
@@ -36,8 +35,8 @@ const SpeechRecognition =
 let toggleBtn = null;
 if (typeof SpeechRecognition === "undefined") {
     startBtn.remove();
-    result.innerHTML =
-        "<b>Browser does not support Speech API. Please download latest chrome.<b>";
+    headLabel.textContent =
+        "Browser does not support Speech API. Please download latest chrome.";
 } else {
     const recognition = new SpeechRecognition();
     recognition.continuous = true;
@@ -127,9 +126,9 @@ function process(rawText) {
     let campusDirector =
         "who is the director at dhvsu porac campus who is the director at dabsu porac campus";
     let uniMission =
-        "what is dhvsu mission what is the dhvsu mission what is the mission of dhvsu what is dabsu mission what is the dabsu mission what is the mission of dabsu";
+        "what is the schools mission what is the school mission what is mission what is the mission what is dhvsu mission what is the dhvsu mission what is the mission of dhvsu what is dabsu mission what is the dabsu mission what is the mission of dabsu";
     let uniVision =
-        "what is dhvsu vision what is the dhvsu vision what is the vision of dhvsu what is dabsu vision what is the dabsu vision what is the vision of dabsu";
+        "what is the schools vision what is the school vision what is vision what is the vision what is dhvsu vision what is the dhvsu vision what is the vision of dhvsu what is dabsu vision what is the dabsu vision what is the vision of dabsu";
     let tuitionFee =
         "how much is the tuition fee per semester how much is the tuition fee per sem";
     let campusCourses =
