@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Virtual Assistant Support</title>
+    <link href="static/styles/body.css" rel="stylesheet" type="text/css" />
+    <link href="static/styles/speech.css" rel="stylesheet" type="text/css" />
+    <link href="static/styles/container.css" rel="stylesheet" type="text/css" />
+    <link href="static/styles/modal.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="userStateContainer">
+        <img id="user-state-image" src="static/images/vaicon-idle.png">
+    </div>
+    <div class="mainContainer">
+        <div class="msgerheader">
+            <span>Virtual Assistant Support for DHVSU Porac Campus</span>
+        </div>
+        <div class="msgerContainer">
+            <main class="msgerChat">
+                <!-- Speech Bubbles here -->
+            </main>
+        </div>
+        <div class="msgerFooter">
+            <a id="startBtn">
+                <i id="micIcon" class="fa fa-microphone-slash"></i>
+                <p>Mic</p>
+            </a>
+            <a id="questionBtn" onclick="document.getElementById('id01').style.display='block'">
+                <i id="questionModalIcon" class="fa fa-question-circle-o"></i>
+                <p>Questions</p>
+            </a>
+        </div>
+        <div class="labelFooter">
+            <p id="labelBelowMic">Enable the microphone and start speaking!</p>
+        </div>
+    </div>
+    <div class="botStateContainer">
+        <img id="bot-state-image" src="static/images/vaicon-idle.png">
+    </div>
+    <div id="id01" class="modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+            <header class="w3-container modal-header-bgcolor">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-display-topright">&times;</span>
+                <h2>Available Questions</h2>
+            </header>
+
+            <div class="w3-bar w3-border-bottom">
+                <button class="tablink w3-bar-item w3-button" onclick="openCategory(event, 'Category1')">Category 1</button>
+                <button class="tablink w3-bar-item w3-button" onclick="openCategory(event, 'Category2')">Category 2</button>
+                <button class="tablink w3-bar-item w3-button" onclick="openCategory(event, 'Category3')">Category 3</button>
+            </div>
+
+            <div id="Category1" class="w3-container city">
+                <h1>Category 1</h1>
+                <button class="button-7" id="question1" onclick="getAnswerById('question1')" role="button">What are the requirements of Freshmen to enroll in DHVSU Porac Campus?</button>
+                <button class="button-7" id="question2" onclick="getAnswerById('question2')" role="button">What courses are available at DHVSU Porac Campus?</button>
+                <button class="button-7" id="question3" onclick="getAnswerById('question3')" role="button">What are the requirements of Transferees to enroll in DHVSU Porac Campus?</button>
+            </div>
+
+            <div id="Category2" class="w3-container city">
+                <h1>Category 2</h1>
+                <button class="button-7" id="question4" onclick="getAnswerById('question4')" role="button">How much is the tuition fee per semester?</button>
+                <button class="button-7" id="question5" onclick="getAnswerById('question5')" role="button">Where is DHVSU Porac Campus Located?</button>
+                <button class="button-7" id="question6" onclick="getAnswerById('question6')" role="button">Is DHVSU public or private?</button>
+            </div>
+
+            <div id="Category3" class="w3-container city">
+                <h1>Category 3</h1>
+                <button class="button-7" id="question7" onclick="getAnswerById('question7')" role="button">Who is the Director at DHVSU Porac Campus?</button>
+                <button class="button-7" id="question8" onclick="getAnswerById('question8')" role="button">Who is the Academic Chairperson at DHVSU Porac Campus?</button>
+                <button class="button-7" id="question9" onclick="getAnswerById('question9')" role="button">What is the DHVSU Mission?</button>
+                <button class="button-7" id="question10" onclick="getAnswerById('question10')" role="button">What is the DHVSU Vision?</button>
+            </div>
+
+            <div class="w3-container w3-light-grey w3-padding">
+                <button class="w3-button w3-right w3-white w3-border" onclick="document.getElementById('id01').style.display='none'">Close</button>
+            </div>
+        </div>
+</body>
+<script src="scripts/script.js"></script>
+
+</html>
