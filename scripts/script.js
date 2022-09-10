@@ -45,23 +45,27 @@ if (typeof SpeechRecognition === "undefined") {
         const last = event.results.length - 1;
         const res = event.results[last];
         const text = res[0].transcript;
+        var processMsg = `
+            <div id="processing" class="msg-container">
+                <p class="username">User</p>
+                <p>${text}</p>
+                <span class="time-left">${formatDate(new Date())}</span>
+            </div>
+            `;
+        var element = document.getElementById("processing");
         if (res.isFinal) {
-            var element = document.getElementById("processing");
             element.remove();
             userStateImage.src = "static/images/vaicon-idle.png";
             getBotResponse(text);
         } else {
             userStateImage.src = "static/images/vaicon-speaking.png";
-            var processMsg = `
-                <div id="processing" class="msg-container">
-                    <p class="username">User</p>
-                    <p>${text}</p>
-                    <span class="time-left">${formatDate(new Date())}</span>
-                </div>
-                `;
-            var element = document.getElementById("processing");
             msgerChat.insertAdjacentHTML("beforeend", processMsg);
             msgerContainer.scrollTop += 500;
+            try {
+                element.remove();
+            } catch (err) {
+                console.log(err);
+            }
         }
     };
     let listening = false;
@@ -126,19 +130,25 @@ function process(rawText) {
     let campusDirector =
         "who is the director at dhvsu porac campus who is the director at dabsu porac campus";
     let uniMission =
-        "what is the schools mission what is the school mission what is mission what is the mission what is dhvsu mission what is the dhvsu mission what is the mission of dhvsu what is dabsu mission what is the dabsu mission what is the mission of dabsu";
+        "what is universitys mission what is the universitys mission what is the schools mission what is the school mission what is mission what is the mission what is dhvsu mission what is the dhvsu mission what is the mission of dhvsu what is dabsu mission what is the dabsu mission what is the mission of dabsu";
     let uniVision =
-        "what is the schools vision what is the school vision what is vision what is the vision what is dhvsu vision what is the dhvsu vision what is the vision of dhvsu what is dabsu vision what is the dabsu vision what is the vision of dabsu";
+        "what is universitys vision what is the universitys vision what is the schools vision what is the school vision what is vision what is the vision what is dhvsu vision what is the dhvsu vision what is the vision of dhvsu what is dabsu vision what is the dabsu vision what is the vision of dabsu";
     let tuitionFee =
-        "how much is the tuition fee per semester how much is the tuition fee per sem";
+        "how much is the tuition fee in porac campus how much is tuition fee in porac campus how much is the tuition fee in dhvsu porac campus how much is tuition fee in dhvsu porac campus how much is tuition fee per semester how much is the tuition fee per semester how much is the tuition fee per sem";
     let campusCourses =
         "what are the available courses in dhvsu porac campus what are the available courses in dabsu porac campus what are the available courses in porac campus what courses are available at dhvsu porac campus";
     let replaySpeech =
-        "again what did you say what did you just say say that again say it again";
+        "again what did you say what did you just say say that again say it again what is it again";
 
     let response = null;
     if (greetings.includes(text) == true) {
-        response = "hi, how are you doing?";
+        var choices = [
+            "Hello, what would you like to ask?",
+            "Greetings, what would you like to ask?",
+            "Hi, what would you like to ask?",
+        ];
+        var randomChoice = Math.floor(Math.random() * choices.length);
+        response = choices[randomChoice];
     } else if (gratitude.includes(text) == true) {
         response = "Your welcome.";
     } else if (askForName.includes(text) == true) {
