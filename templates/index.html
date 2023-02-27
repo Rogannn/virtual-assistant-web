@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Virtual Assistant Support</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/static/styles/body.css" rel="stylesheet">
+    <link href="/static/styles/speech.css" rel="stylesheet">
+    <link href="/static/styles/container.css" rel="stylesheet">
+    <link href="/static/styles/modal.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="mainContainer">
+        <div class="msgerheader">
+            <span id="msg-header-label">Virtual Assistant Support for DHVSU Porac Campus</span>
+        </div>
+        <div class="msgerContainer">
+            <main class="msgerChat">
+                <!-- Speech Bubbles here -->
+            </main>
+        </div>
+        <div class="msgerFooter">
+            <a id="startBtn">
+                <i id="micIcon" class="fa fa-microphone-slash fa-beat"></i>
+                <p>Mic</p>
+            </a>
+            <a id="questionBtn" onclick="document.getElementById('id01').style.display='block'">
+                <i id="questionModalIcon" class="fa fa-question-circle-o"></i>
+                <p>Questions</p>
+            </a>
+        </div>
+        <div class="labelFooter">
+            <p id="labelBelowMic">Enable the microphone and start speaking!</p>
+        </div>
+    </div>
+    <div id="id01" class="modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+            <header class="w3-container modal-header-bgcolor">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-display-topright">&times;</span>
+                <h2>Available Questions</h2>
+            </header>
+
+            <div class="w3-bar w3-border-bottom">
+                <button class="tablink w3-bar-item w3-button" onclick="openCategory(event, 'Category1')">Category 1</button>
+                <button class="tablink w3-bar-item w3-button" onclick="openCategory(event, 'Category2')">Category 2</button>
+                <button class="tablink w3-bar-item w3-button" onclick="openCategory(event, 'Category3')">Category 3</button>
+                <button class="tablink w3-bar-item w3-button" onclick="openCategory(event, 'Category4')">Category 4</button>
+            </div>
+
+            <div id="Category1" class="w3-container city">
+                <h1>Category 1</h1>
+            </div>
+
+            <div id="Category2" class="w3-container city">
+                <h1>Category 2</h1>
+            </div>
+
+            <div id="Category3" class="w3-container city">
+                <h1>Category 3</h1>
+            </div>
+
+            <div id="Category4" class="w3-container city">
+                <h1>Category 4</h1>
+            </div>
+
+            <div class="w3-container w3-light-grey w3-padding">
+                <button class="w3-button w3-right w3-white w3-border" onclick="document.getElementById('id01').style.display='none'">Close</button>
+            </div>
+        </div>
+</body>
+<!-- partial -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="/static/scripts/main.js"></script>
+
+</html>
