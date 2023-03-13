@@ -1,0 +1,213 @@
+[March 13, 2023: 01:57 PM]: [ADMIN] Edited Intent: 
+Old:
+{'id': 0, 'tag': 'open_portal', 'patterns': ['open portal', 'open dhvsu portal', 'open dabsu portal'], 'responses': ['DHVSU Portal is now being opened..']}
+New:
+{'tag': 'open_portal', 'patterns': ['open portal', 'open dhvsu portal', 'open dabsu portal'], 'responses': ['DHVSU Portal is now being opened..'], 'context': ''}
+[March 13, 2023: 01:54 PM]: [ADMIN] Failed to edit intent: 
+list indices must be integers or slices, not str
+[March 13, 2023: 11:15 AM]: [ADMIN] Successfully deleted query: "wew" in Category 1
+[March 13, 2023: 11:15 AM]: [ADMIN] Successfully added query "wew" in Category 1
+[March 13, 2023: 11:13 AM]: [ADMIN] Successfully added query "['wew']" in Category 1
+[March 13, 2023: 10:47 AM]: [ADMIN] Successfully deleted query: "What are the requirements of Freshmen to enroll in DHVSU Porac Campus?" in Category 1
+[March 13, 2023: 10:47 AM]: [ADMIN] Tried to delete the query: 
+list indices must be integers or slices, not str 
+[March 13, 2023: 10:46 AM]: [ADMIN] Tried to delete the query: 
+list indices must be integers or slices, not str 
+[March 13, 2023: 10:45 AM]: [ADMIN] Tried to delete the query: 
+list indices must be integers or slices, not str 
+[March 13, 2023: 10:44 AM]: [ADMIN] Tried to delete the query: 
+list indices must be integers or slices, not str 
+[March 13, 2023: 10:34 AM]: [ADMIN] Tried to delete the query: 
+list indices must be integers or slices, not str 
+[March 13, 2023: 10:33 AM]: [ADMIN] Tried to delete the query: 
+list indices must be integers or slices, not str 
+[March 13, 2023: 08:55 AM]: Bot: Hello. My name is PORCAME, what would you like to ask?
+[March 13, 2023: 08:55 AM]: User: Hello
+[March 12, 2023: 08:47 PM]: [ADMIN] Edited Intent: 
+Old:
+{'id': 15, 'tag': 'current_date', 'patterns': ['What is the date today', 'current date', 'current day'], 'responses': ['']}
+New:
+{'tag': 'current_date', 'patterns': ['What is the date today', 'current date', 'current day'], 'responses': [''], 'context': ''}
+[March 12, 2023: 08:00 PM]: [ADMIN] Edited Intent: 
+Old:
+{'id': 12, 'tag': 'time_check', 'patterns': ['What time is it?', 'What is the time now?', 'What is the current time?'], 'responses': []}
+New:
+{'tag': 'time_check', 'patterns': ['What time is it?', 'What is the time now?', 'What is the current time?'], 'responses': [], 'context': ''}
+[March 12, 2023: 06:46 PM]: [ADMIN] Edited Intent: 
+Old:
+{'id': 0, 'tag': 'open_portal', 'patterns': ['open portal', 'open dhvsu portal', 'open dabsu portal'], 'responses': ['DHVSU Portal is now being opened..']}
+New:
+{'tag': 'open_portal', 'patterns': ['open portal', 'open dhvsu portal', 'open dabsu portal'], 'responses': ['DHVSU Portal is now being opened..'], 'context': ''}
+[March 12, 2023: 06:46 PM]: [ADMIN] Edited Intent: 
+Old:
+{'id': 0, 'tag': 'open_portala', 'patterns': ['open portalwew', 'open dhvsu portals', 'open dabsu portald'], 'responses': ['qDHVSU Portal is now being opened..']}
+New:
+{'tag': 'open_portala', 'patterns': ['open portalwew', 'open dhvsu portals', 'open dabsu portald'], 'responses': ['qDHVSU Portal is now being opened..'], 'context': ''}
+[March 12, 2023: 10:56 AM]: Bot: Hi. My name is PORCAME, what would you like to ask?
+[March 12, 2023: 10:56 AM]: User: Hello
+[March 11, 2023: 09:18 AM]: Bot: Greetings. My name is PORCAME, what would you like to ask?
+[March 11, 2023: 09:18 AM]: User: Hello
+[March 10, 2023: 07:12 PM]: Bot: Hello. My name is PORCAME, what would you like to ask?
+[March 10, 2023: 07:12 PM]: User: Hello
+[March 10, 2023: 02:09 PM]: Bot: Greetings. My name is PORCAME, what would you like to ask?
+[March 10, 2023: 02:09 PM]: User: hello
+[March 10, 2023: 02:09 PM]: Bot: Hello. My name is PORCAME, what would you like to ask?
+[March 10, 2023: 02:09 PM]: User: Hello
+[March 10, 2023: 02:07 PM]: Bot: (('get_schedule', 'The available schedules are for 1. BSSW-2A, 2. BSIT-1C, and 3. BSBA-2A. Which one would you like to know?'), 'get_schedule')
+[March 10, 2023: 02:07 PM]: User: can i get a schedule
+[March 10, 2023: 02:07 PM]: Bot: (('', 'Hello. My name is PORCAME, what would you like to ask?'), '')
+[March 10, 2023: 02:07 PM]: User: Hello
+[March 10, 2023: 02:00 PM]: Bot: ("Okay, I've switched the context to get_schedule.\nThe available schedules are for 1. BSSW-2A, 2. BSIT-1C, and 3. BSBA-2A. Which one would you like to know?", 'get_schedule')
+[March 10, 2023: 02:00 PM]: User: can i get a schedule
+[March 10, 2023: 02:00 PM]: Bot: ("Okay, I've switched the context to .\nGreetings. My name is PORCAME, what would you like to ask?", '')
+[March 10, 2023: 02:00 PM]: User: Hello
+[March 10, 2023: 01:46 PM]: Bot: Got it, here is the schedule of [section].
+[March 10, 2023: 01:46 PM]: User:  bsit want to see
+[March 10, 2023: 01:46 PM]: Bot: The available schedules are for 1. BSSW-2A, 2. BSIT-1C, and 3. BSBA-2A. Which one would you like to know?
+[March 10, 2023: 01:46 PM]: User:  get section
+[March 10, 2023: 01:45 PM]: Bot: Hi. My name is PORCAME, what would you like to ask?
+[March 10, 2023: 01:45 PM]: User: hello
+[March 10, 2023: 01:45 PM]: Bot: Greetings. My name is PORCAME, what would you like to ask?
+[March 10, 2023: 01:45 PM]: User: Hello
+[March 10, 2023: 01:45 PM]: Bot: Greetings. My name is PORCAME, what would you like to ask?
+[March 10, 2023: 01:45 PM]: User: Hello
+[March 10, 2023: 01:45 PM]: Bot: Greetings. My name is PORCAME, what would you like to ask?
+[March 10, 2023: 01:45 PM]: User: Hello
+[March 10, 2023: 01:44 PM]: Bot: Greetings. My name is PORCAME, what would you like to ask?
+[March 10, 2023: 01:44 PM]: User: Hello
+[March 10, 2023: 01:43 PM]: Bot: Hi. My name is PORCAME, what would you like to ask?
+[March 10, 2023: 01:43 PM]: User: Hello
+[March 10, 2023: 01:43 PM]: Bot: Greetings. My name is PORCAME, what would you like to ask?
+[March 10, 2023: 01:43 PM]: User: Hello
+[March 10, 2023: 01:42 PM]: Bot: Greetings. My name is PORCAME, what would you like to ask?
+[March 10, 2023: 01:42 PM]: User: Hello
+[March 10, 2023: 01:41 PM]: Bot: Hi. My name is PORCAME, what would you like to ask?
+[March 10, 2023: 01:41 PM]: User: Hello
+[March 10, 2023: 01:41 PM]: Bot: Hi. My name is PORCAME, what would you like to ask?
+[March 10, 2023: 01:41 PM]: User: Hello
+[March 10, 2023: 01:40 PM]: Bot: Hi. My name is PORCAME, what would you like to ask?
+[March 10, 2023: 01:40 PM]: User: Hello
+[March 10, 2023: 01:38 PM]: Bot: Greetings. My name is PORCAME, what would you like to ask?
+[March 10, 2023: 01:38 PM]: User: Hello
+[March 10, 2023: 01:37 PM]: Bot: Hi. My name is PORCAME, what would you like to ask?
+[March 10, 2023: 01:37 PM]: User: Hello
+[March 10, 2023: 01:36 PM]: [ADMIN] Deleted intent: {'tag': 'waw', 'patterns': ['waw'], 'responses': ['waw']}
+[March 10, 2023: 01:36 PM]: [ADMIN] Added new Intent in intents.json: 
+Tag: waw
+Patterns: waw
+Responses: waw
+[March 10, 2023: 01:36 PM]: [ADMIN] Deleted intent: {'tag': 'test', 'patterns': ['test'], 'responses': ['test']}
+[March 10, 2023: 01:34 PM]: [ADMIN] Error, failed to delete the intent: 
+<function delete_intent at 0x00000239FC54A790>
+Error: list index out of range
+[March 10, 2023: 01:33 PM]: [ADMIN] Added new Intent in intents.json: 
+Tag: test
+Patterns: test
+Responses: test
+[March 10, 2023: 01:33 PM]: [ADMIN] Deleted intent: {'tag': 'test', 'patterns': ['test'], 'responses': ['test']}
+[March 10, 2023: 01:33 PM]: Bot: Hi. My name is PORCAME, what would you like to ask?
+[March 10, 2023: 01:33 PM]: User: Hello
+[March 10, 2023: 01:33 PM]: [ADMIN] Error, failed to delete the intent: 
+<function delete_intent at 0x000001A3AAE1A790>
+Error: list index out of range
+[March 10, 2023: 01:32 PM]: [ADMIN] Error: Failed to add the new intent
+'NoneType' object has no attribute 'get'
+[March 10, 2023: 01:31 PM]: [ADMIN] Error: Failed to add the new intent
+'NoneType' object has no attribute 'get'
+[March 10, 2023: 01:31 PM]: [ADMIN] Added new Intent in intents.json: 
+Tag: test
+Patterns: test
+Responses: test
+[March 10, 2023: 11:14 AM]: [ADMIN] Intents raw file updated.
+[March 10, 2023: 11:00 AM]: [ADMIN] Training successfully.
+[March 10, 2023: 10:56 AM]: [ADMIN] Intents raw file updated.
+[March 10, 2023: 10:55 AM]: [ADMIN] Intents raw file updated.
+[March 10, 2023: 10:51 AM]: [ADMIN] Intents raw file updated.
+[March 10, 2023: 10:50 AM]: [ADMIN] Categories raw file updated.
+[March 10, 2023: 10:49 AM]: [ADMIN] Deleted intent: {'tag': 'open_portal', 'patterns': ['open portal', 'open dhvsu portal', 'open dabsu portal'], 'responses': ['DHVSU Portal is now being opened..'], 'context': ['']}
+[March 10, 2023: 06:56 AM]: Bot: Hello. My name is PORCAME, what would you like to ask?
+[March 10, 2023: 06:56 AM]: User: Hello
+[March 09, 2023: 12:53 PM]: Bot: Hi. My name is PORCAME, what would you like to ask?
+[March 09, 2023: 12:53 PM]: User: Hello
+[March 09, 2023: 09:48 AM]: Bot: DHVSU Portal is now being opened..
+[March 09, 2023: 09:48 AM]: User: Open DHVSU Portal
+[March 09, 2023: 09:48 AM]: Bot: Hello. My name is PORCAME, what would you like to ask?
+[March 09, 2023: 09:48 AM]: User: Hello
+[March 09, 2023: 09:44 AM]: Bot: asdfasdfasdfasdf.
+[March 09, 2023: 09:44 AM]: User: Open DHVSU Portal
+[March 09, 2023: 09:44 AM]: Bot: Hi. My name is PORCAME, what would you like to ask?
+[March 09, 2023: 09:44 AM]: User: Hello
+[March 09, 2023: 09:33 AM]: Bot: DHVSU Portal is now being opened.
+[March 09, 2023: 09:33 AM]: User: Open DHVSU Portal
+[March 09, 2023: 09:33 AM]: Bot: Hello. My name is PORCAME, what would you like to ask?
+[March 09, 2023: 09:33 AM]: User: Hello
+[March 09, 2023: 09:32 AM]: Bot: wewewewewewewew
+[March 09, 2023: 09:32 AM]: User: Open DHVSU Portal
+[March 09, 2023: 09:32 AM]: Bot: Hi. My name is PORCAME, what would you like to ask?
+[March 09, 2023: 09:32 AM]: User: Hello
+[March 09, 2023: 09:31 AM]: Bot: Greetings. My name is PORCAME, what would you like to ask?
+[March 09, 2023: 09:31 AM]: User: Hello
+[March 09, 2023: 09:27 AM]: Bot: DHVSU Portal is now being opened..
+[March 09, 2023: 09:27 AM]: User: Open DHVSU Portal
+[March 09, 2023: 09:27 AM]: Bot: Greetings. My name is PORCAME, what would you like to ask?
+[March 09, 2023: 09:27 AM]: User: Hello
+[March 09, 2023: 09:26 AM]: Bot: wewewewewew
+[March 09, 2023: 09:26 AM]: User: Open DHVSU Portal
+[March 09, 2023: 09:26 AM]: Bot: Greetings. My name is PORCAME, what would you like to ask?
+[March 09, 2023: 09:26 AM]: User: Hello
+[March 09, 2023: 09:25 AM]: Bot: wewewewewew
+[March 09, 2023: 09:25 AM]: User: Open DHVSU Portal
+[March 09, 2023: 09:25 AM]: Bot: Hi. My name is PORCAME, what would you like to ask?
+[March 09, 2023: 09:25 AM]: User: Hello
+[March 09, 2023: 09:24 AM]: Bot: Greetings. My name is PORCAME, what would you like to ask?
+[March 09, 2023: 09:24 AM]: User: Hello
+[March 09, 2023: 09:24 AM]: Bot: Hello. My name is PORCAME, what would you like to ask?
+[March 09, 2023: 09:24 AM]: User: Hello
+[March 09, 2023: 09:23 AM]: Bot: wewewewewew
+[March 09, 2023: 09:23 AM]: User: Open DHVSU Portal
+[March 09, 2023: 09:23 AM]: Bot: Greetings. My name is PORCAME, what would you like to ask?
+[March 09, 2023: 09:23 AM]: User: Hello
+[March 09, 2023: 09:20 AM]: Bot: Schedule of Bachelor of Information Technology - 1C: 
+In Monday: 9:00 A.M. - 5:30 P.M. subjects are MATH, CSS, and CC. 
+In Tuesday: 7:30 A.M. - 12:00 P.M., subjects are IT, SOC SCI, and FILIPINO. 
+In Wednesday: 7:30 A.M. - 1:30 P.M. subjects are IT, FILIPINO, and CC. 
+In Thursday: 7:30 A.M. - 3:30 P.M. subjects are CC (A), MATH, HUM, and CC (B). 
+In Friday: 7:30 A.M. - 3:00 P.M. subjects are HUM, FILIPINO, SOC SCI, P.E.
+[March 09, 2023: 09:20 AM]: User: Hello.
+[March 09, 2023: 09:19 AM]: Bot: Schedule of Bachelor of Information Technology - 1C: 
+In Monday: 9:00 A.M. - 5:30 P.M. subjects are MATH, CSS, and CC. 
+In Tuesday: 7:30 A.M. - 12:00 P.M., subjects are IT, SOC SCI, and FILIPINO. 
+In Wednesday: 7:30 A.M. - 1:30 P.M. subjects are IT, FILIPINO, and CC. 
+In Thursday: 7:30 A.M. - 3:30 P.M. subjects are CC (A), MATH, HUM, and CC (B). 
+In Friday: 7:30 A.M. - 3:00 P.M. subjects are HUM, FILIPINO, SOC SCI, P.E.
+[March 09, 2023: 09:19 AM]: User: Hello
+[March 09, 2023: 09:19 AM]: Bot: Schedule of Bachelor of Information Technology - 1C: 
+In Monday: 9:00 A.M. - 5:30 P.M. subjects are MATH, CSS, and CC. 
+In Tuesday: 7:30 A.M. - 12:00 P.M., subjects are IT, SOC SCI, and FILIPINO. 
+In Wednesday: 7:30 A.M. - 1:30 P.M. subjects are IT, FILIPINO, and CC. 
+In Thursday: 7:30 A.M. - 3:30 P.M. subjects are CC (A), MATH, HUM, and CC (B). 
+In Friday: 7:30 A.M. - 3:00 P.M. subjects are HUM, FILIPINO, SOC SCI, P.E.
+[March 09, 2023: 09:19 AM]: User: Hello
+[March 09, 2023: 09:18 AM]: Bot: The DHVSU Porac Campus is located in Porac, Pampanga, and is 15.06 kilometers away, west of the main campus of DHVSU in Bacolor, Pampanga.
+[March 09, 2023: 09:18 AM]: User: Open DHVSU Portal
+[March 09, 2023: 09:18 AM]: Bot: The DHVSU Porac Campus is located in Porac, Pampanga, and is 15.06 kilometers away, west of the main campus of DHVSU in Bacolor, Pampanga.
+[March 09, 2023: 09:18 AM]: User: Hello
+[March 09, 2023: 09:18 AM]: User: Open DHVSU Portal
+[March 09, 2023: 09:00 AM]: Bot: DHVSU Portal is being opened..
+[March 09, 2023: 09:00 AM]: User: Open DHVSU Portal
+[March 09, 2023: 08:59 AM]: Bot: Hi. My name is PORCAME, what would you like to ask?
+[March 09, 2023: 08:59 AM]: User: Hello
+[March 09, 2023: 08:59 AM]: Bot: Greetings. My name is PORCAME, what would you like to ask?
+[March 09, 2023: 08:59 AM]: User: Hello
+[March 09, 2023: 08:49 AM]: Bot: Opening DHVSU Portal..
+[March 09, 2023: 08:49 AM]: User: Open DHVSU Portal
+[March 09, 2023: 08:49 AM]: Bot: Hello. My name is PORCAME, what would you like to ask?
+[March 09, 2023: 08:49 AM]: User: Hello
+[March 09, 2023: 08:46 AM]: Bot: Greetings. My name is PORCAME, what would you like to ask?
+[March 09, 2023: 08:46 AM]: User: Hello
+[March 08, 2023: 05:56 PM]: Bot: Hi. My name is PORCAME, what would you like to ask?
+[March 08, 2023: 05:56 PM]: User: Hello 2023: 08:49 AM]: User: Hello
+[March 09, 2023: 08:46 AM]: Bot: Greetings. My name is PORCAME, what would you like to ask?
+[March 09, 2023: 08:46 AM]: User: Hello
+[March 08, 2023: 05:56 PM]: Bot: Hi. My name is PORCAME, what would you like to ask?
+[March 08, 2023: 05:56 PM]: User: Hello

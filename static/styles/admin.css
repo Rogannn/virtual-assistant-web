@@ -1,0 +1,526 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+h5 {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+}
+
+#logs-container {
+    text-align: left;
+    resize: none;
+    height: 500px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.btn-style {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.flex-right {
+    float: right;
+    display: flex;
+}
+
+.blue {
+    background-color: #174cdd;
+}
+
+.red {
+    background-color: #ce2a2a;
+}
+
+.green {
+    background-color: #4CAF50;
+}
+
+.btn-style.blue:hover {
+    background-color: #143eb3;
+}
+
+.btn-style.red:hover {
+    background-color: #9c2020;
+}
+
+.btn-style.green:hover {
+    background-color: #2c642e;
+}
+
+.green-active {
+    background-color: #367e39;
+}
+
+.key {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.add-intent-button {
+    background-color: #174cdd;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-intent-button:hover {
+    background-color: #133daf;
+}
+
+.edit-inputs {
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f8f8f8;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.edit-inputs:focus {
+    outline: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.json-output-tag {
+    font-weight: bold;
+}
+
+.json-output-div {
+    margin-bottom: 10px;
+}
+
+#intents-json-output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#category-json-output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.json-value {
+    border: 3px solid #e0e0e0;
+    padding: 2px;
+    background-color: #ccc;
+    margin-right: 5px;
+}
+
+.json-output-container {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    background-color: #ececec;
+    border: 1px solid #aaaaaa;
+    padding: 10px;
+}
+
+#intents-raw-file-toggle {
+    margin-top: 10px;
+}
+
+.editor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.editor-textarea {
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+    max-height: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    resize: none;
+    overflow-y: scroll;
+}
+
+@media (min-width: 767px) {
+    .editor-textarea {
+        width: 700px;
+    }
+}
+
+.editor-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.disabled {
+    display: none;
+}
+
+.editor-btn:hover {
+    background-color: #3e8e41;
+}
+
+.json-editor {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.json-editor__header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.json-editor__form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.json-editor__form-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.json-editor__form-row label {
+    flex: 0 0 100px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.json-editor__form-row input {
+    flex: 1;
+}
+
+.json-editor__output textarea {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    resize: none;
+}
+
+span.json-key {
+    font-weight: bold;
+}
+
+span.json-value {
+    margin-left: 5px;
+}
+
+.json-button-container-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.json-button-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.intent-methods-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.json-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.json-button:hover {
+    background-color: #3e8e41;
+}
+
+.category-button-container-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-button-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.category-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category-button:hover {
+    background-color: #3e8e41;
+}
+
+.active-green-button {
+    background-color: #367e39;
+}
+
+
+/* Style the tab */
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+
+/* Show the default tab content */
+
+#Tab1 {
+    display: block;
+}
+
+
+/* The Modal */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* Success Style */
+
+.modal-content.success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+
+
+/* Error Style */
+
+.modal-content.error {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+
+
+/* The Close Button */
+
+.close-modal {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.loading {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border-top: 2px solid #3498db;
+    border-right: 2px solid transparent;
+    animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading.active {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin-left: 5px;
+}
+
+
+/* Modal styles */
+
+.confirmation-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.confirmation-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.confirmation-modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+/* Button styles */
+
+.confirmation-modal-button {
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.confirmation-modal-confirm {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.confirmation-modal-cancel {
+    background-color: #f44336;
+    color: white;
+}

@@ -24,6 +24,15 @@
     text-align: center;
 }
 
+.soundDetector {
+    background-color: var(--transparent-02);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
 .msgerFooter {
     height: 110px;
     background-color: var(--transparent-02);

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin: Virtual Assistant Support</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="/static/styles/admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <h1>Virtual Assistant Back-end</h1>
+    <div class="modal">
+        <div class="modal-content success">
+            <p>Success message goes here.</p>
+            <span class="close-modal">&times;</span>
+        </div>
+    </div>
+
+    <div class="tab">
+        <button class="tablinks active" onclick="openTab(event, 'Tab1')">Intents</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab2')">Categories</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab3')">Logs</button>
+    </div>
+
+    <div id="Tab1" class="tabcontent" style="display:block">
+        <div class="json-button-container-parent row">
+            <div class="json-button-container">
+                <h5>Intent Tags: </h5>
+                <button id="all-tag" class="add-intent-button">All</button>
+                <!-- Dynamically added tag buttons -->
+            </div>
+            <div class="intent-methods-container">
+                <h5>Intent Methods: </h5>
+                <!-- Dynamically added tag buttons -->
+            </div>
+        </div>
+        <div id="intents-json-output">
+            <!-- Dynamically displayed intents.json -->
+        </div>
+        <div class="container-fluid col-md-5 intents-raw-file-container">
+            <button id="intents-raw-file-toggle" class="btn-style green">Edit raw file</button>
+            <div class="row justify-content-center">
+                <div id="intents-editor-container" class="col-md-5 editor-container" style="display: none;">
+                    <div class="form-group">
+                        <h5>Intents file</h5>
+                        <textarea id="intents-json-editor" class="editor-textarea" rows="10"></textarea>
+                        <button class="editor-btn mt-3" onclick="openConfirmationModal('Save intents raw file?', saveJson('intents'))">Save Intents</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="start-training-btn" class="add-intent-button mt-3" onclick="openConfirmationModal('Start training?', startTraining)">Start training</button>
+        <div id="loading" class="loading"></div>
+        <p id="status"></p>
+    </div>
+
+    <div id="Tab2" class="tabcontent">
+        <div class="category-button-container-parent">
+            <div class="category-button-container">
+                <h5>Categories: </h5>
+                <!-- Dynamically added buttons -->
+            </div>
+        </div>
+        <div id="category-json-output">
+            <!-- Dynamically displayed categorical_queries.json -->
+        </div>
+        <div class="container-fluid">
+            <button id="category-raw-file-toggle" class="btn-style green">Edit raw file</button>
+            <div class="row justify-content-center">
+                <div id="category-editor-container" class="col-md-5 editor-container" style="display: none;">
+                    <div class="form-group">
+                        <h5>Categories file</h5>
+                        <textarea id="category-json-editor" class="editor-textarea" rows="10"></textarea>
+                        <button class="editor-btn mt-3" onclick="openConfirmationModal('Save Categories raw file?', saveJson('categories'))">Save Categorical Queries</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Tab3" class="tabcontent">
+        <div id="logs-container">
+            <!-- Logs here -->
+        </div>
+    </div>
+    <div id="confirm-modal" class="confirmation-modal">
+        <div class="confirmation-modal-content">
+            <h5 id="confirmation-text">Are you sure you want to do this?</h5>
+            <br>
+            <button class="confirmation-modal-button confirmation-modal-confirm" onclick="confirmModalAction()">Confirm</button>
+            <button class="confirmation-modal-button confirmation-modal-cancel" onclick="closeModalAction()">Cancel</button>
+        </div>
+    </div>
+    <script src="/static/scripts/components/button.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/static/scripts/admin.js"></script>
+</body>
+
+</html>

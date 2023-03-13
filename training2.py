@@ -15,7 +15,7 @@ from nltk.stem import WordNetLemmatizer
 np.random.seed(42)
 
 # load the intents file and get the context (if any)
-data_file = open('intents.json').read()
+data_file = open('static/scripts/intents.json').read()
 intents = json.loads(data_file)
 context = intents.get('context', None)
 
@@ -88,3 +88,6 @@ model.save('model.h5')
 print(
     f'Training data created: {len(documents)} documents, {len(classes)} classes, {len(words)} unique lemmatized words')
 print(f'Model saved to disk')
+
+result = "Training completed."
+print(result)

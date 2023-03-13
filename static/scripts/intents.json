@@ -1,0 +1,298 @@
+{
+    "intents": [
+        {
+            "tag": "open_portal",
+            "patterns": [
+                "open portal",
+                "open dhvsu portal",
+                "open dabsu portal"
+            ],
+            "responses": [
+                "DHVSU Portal is now being opened.."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "location_of_campus",
+            "patterns": [
+                "where is dhvsu porac campus located",
+                "where is dabsu porac campus located",
+                "location of dabsu porac campus"
+            ],
+            "responses": [
+                "The DHVSU Porac Campus is located in Porac, Pampanga, and is 15.06 kilometers away, west of the main campus of DHVSU in Bacolor, Pampanga."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "public_or_private_uni",
+            "patterns": [
+                "is DHVSU public or private",
+                "is dabsu public or private"
+            ],
+            "responses": [
+                "Don Honorio Ventura State University is a PUBLIC university."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "requirements_of_transferees",
+            "patterns": [
+                "What are the requirements of Transferees to enroll in DHVSU Porac Campus",
+                "What are the requirements of Transferees to enroll in dabsu Porac Campus"
+            ],
+            "responses": [
+                "Requirements for transferees to enroll in DHVSU Porac Campus: 1. Duly accomplished Application Form Photocopy of Grades Copy of Honorable Dismissal Certificate of Good Moral 2. 2 pcs. passport size picture with name tag (white background)"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "requirements_to_enroll",
+            "patterns": [
+                "What are the requirements of Freshmen to enroll in DHVSU Porac Campus",
+                "What are the requirements of Freshmen to enroll in dabsu Porac Campus"
+            ],
+            "responses": [
+                "Requirements for freshmen to enroll in DHVSU Porac Campus: 1. Duly accomplished Application Form Photocopy of Form138 2. 2 pcs. passport size picture with name tag (white background) 3. PSA Birth Certificate"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "academic_cp_of_campus",
+            "patterns": [
+                "who is the academic chairperson at dhvsu porac campus",
+                "who is the academic chairperson at dabsu porac campus",
+                "who is the academic chairperson of porac campus",
+                "chairperson of porac campus"
+            ],
+            "responses": [
+                "Aileen L. Koh, M.A.Ed. is the Academic Chairperson of DHVSU Porac Campus"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "director_of_campus",
+            "patterns": [
+                "who is the director at dhvsu porac campus",
+                "who is the director at dabsu porac campus",
+                "who is the director of porac campus",
+                "director of porac campus"
+            ],
+            "responses": [
+                "DENNIS V. DIZON, M.A.Ed. is the Campus Director of DHVSU Porac Campus"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "uni_mission",
+            "patterns": [
+                "mission of dhvsu",
+                "mission of dabsu",
+                "what is the dhvsu mission",
+                "what is the dabsu mission"
+            ],
+            "responses": [
+                "DHVSU MISSION: DHVSU commits itself to provide an environment conducive to continuous creation of knowledge and technology towards the transformation of students into globally competitive professionals through the synergy of appropriate teaching, research, service and productivity functions."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "uni_vision",
+            "patterns": [
+                "vision of dhvsu",
+                "vision of dabsu",
+                "what is the dhvsu vision",
+                "what is the dabsu vision"
+            ],
+            "responses": [
+                "DHVSU VISION: A lead university in producing quality individuals with competent capacities to generate knowledge and technology and enhance professional practices for sustainable national and global competitiveness through continuous innovation."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "tuition_fee_per_sem",
+            "patterns": [
+                "How much is the tuition fee per semester?",
+                "is there a tuition fee"
+            ],
+            "responses": [
+                "Under the Law, students in accredited State and Local universities/colleges will not pay any tuition fees or misc fee."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "available_courses",
+            "patterns": [
+                "What are the available courses in DHVSU Porac Campus",
+                "available courses",
+                "courses available"
+            ],
+            "responses": [
+                "AVAILABLE COURSES IN DHVSU PORAC CAMPUS: Bachelor of Elementary Education Major in General Education. Bachelor of Science in Business Administration Major in Marketing. Bachelor of Science in Information Technology. Bachelor of Science in Social Work"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "replay",
+            "patterns": [
+                "again",
+                "repeat"
+            ],
+            "responses": [
+                ""
+            ],
+            "context": ""
+        },
+        {
+            "tag": "time_check",
+            "patterns": [
+                "What time is it?",
+                "What is the time now?",
+                "What is the current time?"
+            ],
+            "responses": [
+                ""
+            ],
+            "context": ""
+        },
+        {
+            "tag": "gratitude",
+            "patterns": [
+                "Thank",
+                "Thanks"
+            ],
+            "responses": [
+                "Your welcome",
+                "No problem"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "non_question_speeches",
+            "patterns": [
+                "ok",
+                "okay",
+                "blah",
+                "bleh",
+                "bruh",
+                "bro"
+            ],
+            "responses": [
+                "yes",
+                "okay",
+                "hmm"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "current_date",
+            "patterns": [
+                "What is the date today",
+                "current date",
+                "current day"
+            ],
+            "responses": [
+                ""
+            ],
+            "context": ""
+        },
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hey",
+                "Hello",
+                "What's up?",
+                "hi",
+                "Greetings",
+                "your name"
+            ],
+            "responses": [
+                "Greetings. My name is PORCAME, what would you like to ask?",
+                "Hi. My name is PORCAME, what would you like to ask?",
+                "Hello. My name is PORCAME, what would you like to ask?"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "schedule",
+            "patterns": [
+                "can i get a schedule"
+            ],
+            "responses": [
+                "The available schedules are for 1. BSSW-2A, 2. BSIT-1C, and 3. BSBA-2A. Which one would you like to know?"
+            ],
+            "context": "get_schedule"
+        },
+        {
+            "tag": "get_schedule",
+            "patterns": [
+                "I want to see the schedule of [section]"
+            ],
+            "responses": [
+                "Got it, here is the schedule of [section]."
+            ],
+            "context": "[section]"
+        },
+        {
+            "tag": "available_schedules",
+            "patterns": [
+                "what are the available schedules"
+            ],
+            "responses": [
+                "The schedules that I have right now is from BS Social Work-2A, BS Information Technology-1C, and BS Business Administration-2A"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "BSSW-2A",
+            "patterns": [
+                "BSSW-2A",
+                "schedule of BS Social Work - 2A",
+                "What is the schedule of BSSW-2A",
+                "What is the schedule of Social Work 2A"
+            ],
+            "responses": [
+                "Schedule of Bachelor of Science in Social Work - 2A: In Monday: 7:30 A.M. - 3:30 P.M. subjects are SOSLIT, A5, E1, and GEC 2. In Tuesday: 7:30 A.M. - 3:30 P.M. subjects are B6, A4, and GEC 1. In Wednesday: 7:30 A.M. - 1:30 P.M. subjects are SOSLIT, A5, and GEC 2. In Thursday: 1:00 P.M. - 2:30 P.M. subjects are GEC 1, and P.E. 3. In Friday there are no subjects. "
+            ],
+            "context": ""
+        },
+        {
+            "tag": "BSIT-1C",
+            "patterns": [
+                "BSIT-1C",
+                "schedule of BS Information Technology - 1C",
+                "What is the schedule of BSIT-1C",
+                "What is the schedule of Information Technology 1C",
+                "What is the schedule of B.S. Infotech 1C"
+            ],
+            "responses": [
+                "Schedule of Bachelor of Information Technology - 1C: \nIn Monday: 9:00 A.M. - 5:30 P.M. subjects are MATH, CSS, and CC. \nIn Tuesday: 7:30 A.M. - 12:00 P.M., subjects are IT, SOC SCI, and FILIPINO. \nIn Wednesday: 7:30 A.M. - 1:30 P.M. subjects are IT, FILIPINO, and CC. \nIn Thursday: 7:30 A.M. - 3:30 P.M. subjects are CC (A), MATH, HUM, and CC (B). \nIn Friday: 7:30 A.M. - 3:00 P.M. subjects are HUM, FILIPINO, SOC SCI, P.E."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "BSBA-2A",
+            "patterns": [
+                "BSBA-2A",
+                "schedule of BS Business Administration - 2A",
+                "What is the schedule of BSBA-2A",
+                "What is the schedule of Business Administration 2A"
+            ],
+            "responses": [
+                "Schedule of Bachelor of Science in Business Administration - 2A: In Monday: 7:30 A.M. - 9:00 A.M, subject is BACC. In Tuesday: 9:00 A.M. - 3:30 P.M., subjects are RIZAL, PPC, DALFIL, and PIC. In Wednesday: 7:30 A.M. - 10:30 A.M. subjects are BACC 501, and BACC 201. In Thursday: 7:30 A.M. - 4:30 P.M. subjects are DALFIL, RIZAL, PPC, and PIC. In Friday: 9:00 A.M. - 2:30 P.M. subjects are BACC 501, and P.E."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "category_4_info",
+            "patterns": [
+                "what is category 4",
+                "what is category 4 used for"
+            ],
+            "responses": [
+                "Category 4 is an extra category where other type of question is asked in case of new valid question that the user asked do not fit in other categories."
+            ],
+            "context": ""
+        }
+    ]
+}
